@@ -1,1 +1,128 @@
-hello world
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by anonymous (http://jsbin.com/qahaqenogo/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #32;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background-color: #3333;
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-right: 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Santiago Vásquez Ramírez</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>santiago.vasquez@galileo.edu</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(+502) 3500-0321</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Desarrollador Web</h3>
+            <p>Empresa Acme - Ciudad de Guatemala, Guatemala | Junio 2023 - A la fecha</p>
+            <ul>
+                <li>Desarrollo de aplicación: SocialLife</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Cursando</h3>
+            <p>Universidad Galileo - Ciudad de Guatemala, Guatemala | Enero 2024 - A la fecha</p>
+            <p>Técnico en Desarrollo de Software</p>
+        </div>
+    </section>
+</body>
+</html>
